@@ -301,10 +301,10 @@ html {
     align-items: flex-start; }
     .theme--light .full-page-modal__dialog {
       background-color: #ffffff;
-      box-shadow: 0 4px 6px 0; }
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4); }
     .theme--dark .full-page-modal__dialog {
       background-color: #191c31;
-      box-shadow: 0 4px 6px 0; }
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.72); }
   .full-page-modal__header {
     font-size: 1.6em;
     color: rgba(0, 0, 0, 0.8);

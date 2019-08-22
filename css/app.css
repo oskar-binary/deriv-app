@@ -2429,16 +2429,16 @@ html {
     height: 100%;
     content: ''; }
     .theme--light .app-contents:after {
-      background-color: rgba(255, 255, 255, 0.96); }
+      background-color: rgba(0, 0, 0, 0.72); }
     .theme--dark .app-contents:after {
-      background-color: rgba(25, 28, 49, 0.96); }
+      background-color: rgba(11, 14, 24, 0.88); }
   .app-contents--is-disabled:after {
     opacity: 1;
     pointer-events: auto; }
   .theme--light .app-contents--is-route-modal {
-    background-color: rgba(255, 255, 255, 0.96); }
+    background-color: rgba(0, 0, 0, 0.72); }
   .theme--dark .app-contents--is-route-modal {
-    background-color: rgba(25, 28, 49, 0.96); }
+    background-color: rgba(11, 14, 24, 0.88); }
   .app-contents--show-positions-drawer .trade-container .chart-container {
     width: calc(100% - 480px - 18px);
     margin-left: 258px; }
@@ -2645,9 +2645,9 @@ html {
     z-index: 999;
     content: ''; }
     .theme--light .sidebar__items:after {
-      background-color: rgba(255, 255, 255, 0.72); }
+      background-color: rgba(255, 255, 255, 0.88); }
     .theme--dark .sidebar__items:after {
-      background-color: rgba(16, 19, 32, 0.56); }
+      background-color: rgba(16, 19, 32, 0.72); }
   .sidebar__items--is-disabled:after {
     opacity: 1;
     pointer-events: auto; }
@@ -2809,9 +2809,9 @@ html {
     height: calc(100% + 2px);
     content: ''; }
     .theme--light .header:after {
-      background-color: rgba(255, 255, 255, 0.96); }
+      background-color: rgba(0, 0, 0, 0.72); }
     .theme--dark .header:after {
-      background-color: rgba(25, 28, 49, 0.96); }
+      background-color: rgba(11, 14, 24, 0.88); }
   .theme--light .header {
     background-color: #f4f4f6;
     border-bottom: 1px solid #f4f4f6; }
@@ -2981,9 +2981,9 @@ html {
     height: 100%;
     content: ''; }
     .theme--light .footer:after {
-      background-color: rgba(255, 255, 255, 0.96); }
+      background-color: rgba(0, 0, 0, 0.72); }
     .theme--dark .footer:after {
-      background-color: rgba(25, 28, 49, 0.96); }
+      background-color: rgba(11, 14, 24, 0.88); }
   .theme--light .footer {
     background-color: #f4f4f6;
     color: rgba(0, 0, 0, 0.8); }
@@ -3140,9 +3140,9 @@ html {
   overflow: hidden;
   opacity: 0; }
   .theme--light .modal-root {
-    background-color: rgba(255, 255, 255, 0.96); }
+    background-color: rgba(0, 0, 0, 0.72); }
   .theme--dark .modal-root {
-    background-color: rgba(25, 28, 49, 0.96); }
+    background-color: rgba(11, 14, 24, 0.88); }
   .modal-root:not(:empty) {
     display: flex;
     opacity: 1; }
@@ -5808,9 +5808,9 @@ html {
   flex-direction: column;
   padding: 0 32px; }
   .theme--light .market-is-closed-overlay {
-    background-color: rgba(255, 255, 255, 0.72); }
+    background-color: rgba(255, 255, 255, 0.88); }
   .theme--dark .market-is-closed-overlay {
-    background-color: rgba(16, 19, 32, 0.56); }
+    background-color: rgba(16, 19, 32, 0.72); }
   .market-is-closed-overlay p {
     font-size: 1.4em;
     color: rgba(0, 0, 0, 0.8);
@@ -5931,10 +5931,10 @@ html {
     transition: transform 0.25s cubic-bezier(0.25, 0.1, 0.1, 0.25), opacity 0.25s cubic-bezier(0.25, 0.1, 0.1, 0.25); }
     .theme--light .modal__container {
       background-color: #ffffff;
-      box-shadow: 0 4px 6px 0; }
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4); }
     .theme--dark .modal__container {
       background-color: #191c31;
-      box-shadow: 0 4px 6px 0; }
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.72); }
     .modal__container--hide {
       display: none; }
     .modal__container--enter, .modal__container--exit {
@@ -6866,10 +6866,10 @@ html {
     align-items: flex-start; }
     .theme--light .full-page-modal__dialog {
       background-color: #ffffff;
-      box-shadow: 0 4px 6px 0; }
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4); }
     .theme--dark .full-page-modal__dialog {
       background-color: #191c31;
-      box-shadow: 0 4px 6px 0; }
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.72); }
   .full-page-modal__header {
     font-size: 1.6em;
     color: rgba(0, 0, 0, 0.8);
