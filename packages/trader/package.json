@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run test && sudo webpack-dev-server --config \"./webpack/webpack.config.js\"",
     "serve": "echo \"Serving...\" && sudo webpack-dev-server --config \"./webpack/webpack.config.js\"",
-    "build": "f () { npm run test && webpack --config \"./webpack/webpack.config.js\" --env.base $1;}; f",
+    "build": "f () { npm run test && lerna bootstrap && webpack --config \"./webpack/webpack.config.js\" --env.base $1;}; f",
     "build:travis": "echo \"Error: no build:travis specified\"",
     "test": "mochapack -r babel-polyfill -r jsdom-global/register -r mock-local-storage --webpack-config \"./webpack/webpack.config-test.js\" \"src/**/__tests__/*.js\" --require ignore-styles",
     "test:eslint": "eslint \"./src/**/*.?(js|jsx)\"",

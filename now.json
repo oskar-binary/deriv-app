@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "deriv-test-monorepo",
+  "builds": [
+    { "src": "packages/shared/package.json", "use": "@now/node" },
+    { "src": "packages/components/package.json", "use": "@now/node" },
+    { "src": "packages/trader/package.json", "use": "@now/node" }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "packages/trader/package.json"
+    }
+  ]
+}
