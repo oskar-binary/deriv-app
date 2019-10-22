@@ -6,118 +6,7 @@
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -177,26 +66,7 @@
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -289,7 +159,9 @@
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -339,7 +211,9 @@
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-themed-scrollbars__track--horizontal {
   height: 6px;
@@ -370,118 +244,7 @@
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -541,26 +304,7 @@
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -653,7 +397,9 @@
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -703,7 +449,9 @@
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-popover__target__icon--disabled .info .color1-fill {
   fill: var(--text-disabled); }
@@ -823,118 +571,7 @@
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -994,26 +631,7 @@
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -1106,7 +724,9 @@
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -1156,7 +776,9 @@
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-modal-header__close .color1-fill {
   fill: var(--text-prominent); }
@@ -1228,118 +850,7 @@
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -1399,26 +910,7 @@
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -1532,7 +1024,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
@@ -1674,118 +1165,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -1845,26 +1225,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -1957,7 +1318,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -2007,7 +1370,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-field-error {
   position: absolute;
@@ -2082,7 +1447,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -2132,7 +1499,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-input {
   position: relative;
@@ -2407,7 +1776,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -2457,7 +1828,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-themed-scrollbars__track--horizontal {
   height: 6px;
@@ -2543,7 +1916,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -2593,7 +1968,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-dropdown-list {
   position: absolute;
@@ -2691,7 +2068,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -2741,7 +2120,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-autocomplete {
   width: 100%;
@@ -2790,118 +2171,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -2961,26 +2231,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -3073,7 +2324,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -3123,7 +2376,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-checkbox {
   display: flex;
@@ -3167,118 +2422,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -3338,26 +2482,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -3450,7 +2575,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -3500,7 +2627,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .barspinner {
   margin: auto;
@@ -3645,7 +2774,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -3695,7 +2826,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .btn {
   font-size: 1rem;
@@ -3981,118 +3114,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -4152,26 +3174,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -4264,7 +3267,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -4314,7 +3319,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-field-error {
   position: absolute;
@@ -4389,7 +3396,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -4439,7 +3448,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-input {
   position: relative;
@@ -4659,118 +3670,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -4830,26 +3730,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -4963,7 +3844,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
@@ -5049,118 +3929,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -5220,26 +3989,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -5332,7 +4082,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -5382,7 +4134,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-dropdown__select-arrow .color1-fill {
   fill: var(--text-general); }
@@ -5726,7 +4480,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -5776,7 +4532,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-list {
   position: absolute;
@@ -5949,7 +4707,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -5999,7 +4759,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-themed-scrollbars__track--horizontal {
   height: 6px;
@@ -6085,7 +4847,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -6135,7 +4899,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-popover__target__icon--disabled .info .color1-fill {
   fill: var(--text-disabled); }
@@ -6255,118 +5021,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -6426,26 +5081,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -6538,7 +5174,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -6588,7 +5226,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-file-dropzone {
   width: 100%;
@@ -6679,118 +5319,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -6850,26 +5379,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -6962,7 +5472,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -7012,7 +5524,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-field-error {
   position: absolute;
@@ -7087,7 +5601,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -7137,7 +5653,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-input {
   position: relative;
@@ -7412,7 +5930,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -7462,7 +5982,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-password-input__visibility-icon {
   cursor: pointer; }
@@ -7474,118 +5996,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -7645,26 +6056,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -7757,7 +6149,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -7807,7 +6201,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-field-error {
   position: absolute;
@@ -7882,7 +6278,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -7932,7 +6330,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-password-meter {
   position: absolute;
@@ -7984,118 +6384,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -8155,26 +6444,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -8267,7 +6537,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -8317,7 +6589,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .dc-label {
   font-size: 14px;
@@ -8421,118 +6695,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -8592,26 +6755,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -8704,7 +6848,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -8754,7 +6900,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 /*------------------------------------*
  *  # Constants
@@ -8763,118 +6911,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -8934,26 +6971,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -9046,7 +7064,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -9096,7 +7116,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 /*------------------------------------*
  *  # Constants
@@ -9105,118 +7127,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -9276,26 +7187,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -9409,7 +7301,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
@@ -9632,7 +7523,6 @@ html {
     transform: rotate(45deg);
     opacity: 0; }
     .digits__particles-particle {
-      background: #85acb0;
       background: var(--brand-secondary);
       opacity: 0.7;
       border-radius: 50%;
@@ -9662,7 +7552,6 @@ html {
         .digits__particles--explode .digits__particles-particle:nth-child(8) {
           transform: translate(45px, -45px); }
   .digits__icon-color {
-    fill: #ff6444;
     fill: var(--brand-orange); }
   .digits__icon--win .digits__icon-color {
     fill: var(--text-profit-success); }
@@ -9686,118 +7575,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -9857,26 +7635,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -10051,7 +7810,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
@@ -10183,7 +7941,6 @@ html {
   .acc-switcher__new-account:hover {
     background-color: rgba(255, 68, 79, 0.08) !important; }
   .acc-switcher__new-account .btn__text {
-    color: #ff444f;
     color: var(--brand-red-coral); }
   .acc-switcher__new-account .btn {
     align-items: center;
@@ -10345,118 +8102,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -10516,26 +8162,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -10631,118 +8258,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -10802,26 +8318,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -10873,7 +8370,6 @@ html {
     font-size: 14px;
     line-height: 20px;
     border-radius: 10px;
-    background-color: #85acb0;
     background-color: var(--brand-secondary);
     color: var(--text-colored-background);
     width: 50px;
@@ -10895,118 +8391,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -11066,26 +8451,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -11178,7 +8544,9 @@ html {
   --status-warning: #ffad3a;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(75,180,179,0.92); }
+  --transparent-success: rgba(75,180,179,0.92);
+  --gradient-success: linear-gradient(to top, #fff, rgba(75,180,179,0.16));
+  --gradient-danger: linear-gradient(to top, #fff, rgba(255,68,79,0.16)); }
 
 :root .theme--dark {
   --general-main-1: #0e0e0e;
@@ -11228,7 +8596,9 @@ html {
   --status-success: #00a79e;
   --status-info: #377cfc;
   --status-colored-background: #fff;
-  --transparent-success: rgba(0,167,158,0.92); }
+  --transparent-success: rgba(0,167,158,0.92);
+  --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0,167,158,0.16));
+  --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255,68,79,0.16)); }
 
 .barspinner {
   margin: auto;
@@ -11318,118 +8688,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -11489,26 +8748,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -11622,7 +8862,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
@@ -11733,118 +8972,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -11904,26 +9032,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -12037,7 +9146,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
@@ -12119,118 +9227,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -12290,26 +9287,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -12423,7 +9401,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
@@ -12544,118 +9521,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -12715,26 +9581,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -12848,7 +9695,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
@@ -12899,118 +9745,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -13070,26 +9805,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -13150,7 +9866,6 @@ html {
       -webkit-animation-delay: -0.8s;
               animation-delay: -0.8s; }
   .barspinner--dark .barspinner__rect {
-    background-color: #85acb0;
     background-color: var(--brand-secondary); }
 
 @-webkit-keyframes sk-stretchdelay {
@@ -13180,7 +9895,6 @@ html {
   .initial-loader__barspinner {
     margin: 5em auto; }
     .initial-loader__barspinner--rect {
-      background-color: #85acb0;
       background-color: var(--brand-secondary); }
   .initial-loader__text {
     line-height: 44px;
@@ -13199,118 +9913,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -13370,26 +9973,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -13544,7 +10128,6 @@ html {
     .btn--secondary--red {
       border: 1px solid var(--button-primary-default); }
       .btn--secondary--red .btn__text {
-        color: #ff444f;
         color: var(--brand-red-coral); }
     .btn--secondary--green {
       border: 1px solid #39b19d;
@@ -13572,7 +10155,6 @@ html {
     .btn--tertiary--default:active:not([disabled]) {
       background: var(--button-tertiary-default); }
     .btn--tertiary--default .btn__text {
-      color: #ff444f;
       color: var(--brand-red-coral);
       /* stylelint-disable-line color-no-hex */ }
     .btn--tertiary--default:disabled, .btn--tertiary--default[disabled] {
@@ -13620,7 +10202,6 @@ html {
     bottom: -0.1em;
     right: -0.1em;
     border-radius: inherit;
-    border: 0 solid #85acb0;
     border: 0 solid var(--brand-secondary);
     opacity: 0.4;
     -webkit-animation: buttonEffect 0.4s;
@@ -13665,118 +10246,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -13836,26 +10306,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -13969,7 +10420,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
@@ -14156,13 +10606,11 @@ html {
       text-align: left;
       line-height: 1.5;
       text-transform: none;
-      color: #ff444f !important;
       color: var(--brand-red-coral) !important; }
   .account-wizard .checkbox {
     align-items: center;
     margin: 1rem 0 0; }
     .account-wizard .checkbox__box--active {
-      background-color: #ff444f;
       background-color: var(--brand-red-coral); }
     .account-wizard .checkbox__box--active:after {
       font-size: 1.3rem;
@@ -14183,118 +10631,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -14354,26 +10691,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -14487,7 +10805,6 @@ html {
 
 /** @define link */
 .link {
-  color: #ff444f;
   color: var(--brand-red-coral);
   font-weight: bold;
   text-decoration: none; }
@@ -14575,14 +10892,11 @@ html {
       text-transform: capitalize;
       text-align: center;
       line-height: 1.5;
-      background-color: #ff444f !important;
       background-color: var(--brand-red-coral) !important;
-      border: 1px solid #ff444f !important;
       border: 1px solid var(--brand-red-coral) !important;
       color: var(--text-colored-background);
       transition: all 0.3s ease; }
     .form-progress__step--current .title {
-      color: #ff444f;
       color: var(--brand-red-coral);
       font-weight: bold; }
   .form-progress__steps {
@@ -14604,7 +10918,6 @@ html {
       width: 77%;
       border-top: 2px solid var(--text-less-prominent); }
     .form-progress__steps--after {
-      border-top: 2px solid #ff444f;
       border-top: 2px solid var(--brand-red-coral);
       bottom: 0;
       content: '';
@@ -14628,118 +10941,7 @@ html {
 /* COLOR PALETTE */
 /* colors */
 /* alpha colors */
-:root {
-  --text-size-xxs: 1.2rem;
-  --text-size-xs: 1.4rem;
-  --text-size-s: 1.6rem;
-  --text-size-sm: 2rem;
-  --text-size-m: 2.4rem;
-  --text-size-l: 3.2rem;
-  --text-size-xl: 4.8rem;
-  --text-size-xxl: 6.4rem;
-  --brand-dark-grey: #0e0e0e;
-  --brand-red-coral: #ff444f;
-  --brand-orange: #ff6444;
-  --brand-secondary: #85acb0; }
-  :root .theme--light {
-    --general-main-1: #ffffff;
-    --general-main-2: #ffffff;
-    --general-section-1: #f2f3f4;
-    --general-section-2: #f2f3f4;
-    --general-disabled: #eaeced;
-    --general-hover: #e6e9e9;
-    --general-active: #d6dadb;
-    --text-prominent: #333333;
-    --text-general: #333333;
-    --text-less-prominent: #999999;
-    --text-disabled: #d6d6d6;
-    --text-profit-success: #4bb4b3;
-    --text-loss-danger: #ec3f3f;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #4bb4b3;
-    --purchase-section-1: #3d9494;
-    --purchase-main-2: #ec3f3f;
-    --purchase-section-2: #d33636;
-    --purchase-disabled-main: #eaeced;
-    --purchase-disabled-section: #e6e9e9;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #999999;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(0, 0, 0, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.16);
-    --state-normal: #ffffff;
-    --state-hover: #e6e9e9;
-    --state-active: #d6dadb;
-    --state-disabled: #eaeced;
-    --border-normal: #d6dadb;
-    --border-hover: #999999;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #eaeced;
-    --fill-normal: #ffffff;
-    --fill-hover: #999999;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #eaeced;
-    --status-default: #eaeced;
-    --status-danger: #ec3f3f;
-    --status-success: #4bb4b3;
-    --status-warning: #ffad3a;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(75, 180, 179, 0.92); }
-  :root .theme--dark {
-    --general-main-1: #0e0e0e;
-    --general-main-2: #151717;
-    --general-section-1: #151717;
-    --general-section-2: #0e0e0e;
-    --general-disabled: #1d1f20;
-    --general-hover: #242828;
-    --general-active: #323738;
-    --text-prominent: #ffffff;
-    --text-general: #c2c2c2;
-    --text-less-prominent: #6e6e6e;
-    --text-disabled: #3e3e3e;
-    --text-profit-success: #00a79e;
-    --text-loss-danger: #cc2e3d;
-    --text-colored-background: #ffffff;
-    --purchase-main-1: #00a79e;
-    --purchase-section-1: #008079;
-    --purchase-main-2: #cc2e3d;
-    --purchase-section-2: #a32430;
-    --purchase-disabled-main: #1d1f20;
-    --purchase-disabled-section: #0e0e0e;
-    --button-primary-default: var(--brand-red-coral);
-    --button-secondary-default: #6e6e6e;
-    --button-tertiary-default: transparent;
-    --button-primary-hover: #eb3e48;
-    --button-secondary-hover: rgba(255, 255, 255, 0.08);
-    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
-    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
-    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
-    --shadow-menu: rgba(0, 0, 0, 0.84);
-    --state-normal: #0e0e0e;
-    --state-hover: #242828;
-    --state-active: #323738;
-    --state-disabled: #1d1f20;
-    --border-normal: #323738;
-    --border-hover: #6e6e6e;
-    --border-active: var(--brand-secondary);
-    --border-disabled: #1d1f20;
-    --fill-normal: #0e0e0e;
-    --fill-hover: #6e6e6e;
-    --fill-active: var(--brand-secondary);
-    --fill-disabled: #1d1f20;
-    --status-default: #eaeced;
-    --status-danger: #cc2e3d;
-    --status-warning: #ffad3a;
-    --status-success: #00a79e;
-    --status-info: #377cfc;
-    --status-colored-background: #ffffff;
-    --transparent-success: rgba(0, 167, 158, 0.92); }
-
+/* gradient colors */
 /* Preserve legacy variables */
 /* Primary */
 /* stylelint-enable color-no-hex */
@@ -14799,26 +11001,7 @@ html {
    @include createBarspinnerAnimation(5, 1.2s, 0,1);
  */
 /*
- * Implementation of themes
- * generate sets of themes keys object property (dark / light)
- * @param $themes - themes property
- * Usage example:
-   @include themify($themes) { color: themed('background_color') }
- */
-/*
- * Generate typefaces key-value pair of themefy object
- * Should be inside themify mixins
- * Example:
-   @include themify($themes) { border-color: 1px solid themed('background_color') }
- */
-/*
  * Tooltip colors
- * @param $color - color property
- * Usage example:
-   @include tooltipColor($COLOR_RED);
- */
-/*
- * Themified Tooltip colors
  * @param $color - color property
  * Usage example:
    @include tooltipColor($COLOR_RED);
@@ -15070,6 +11253,124 @@ table {
   border-spacing: 0; }
 
 /* stylelint-enable */
+:root {
+  --text-size-xxs: 1.2rem;
+  --text-size-xs: 1.4rem;
+  --text-size-s: 1.6rem;
+  --text-size-sm: 2rem;
+  --text-size-m: 2.4rem;
+  --text-size-l: 3.2rem;
+  --text-size-xl: 4.8rem;
+  --text-size-xxl: 6.4rem;
+  --brand-dark-grey: #0e0e0e;
+  --brand-red-coral: #ff444f;
+  --brand-orange: #ff6444;
+  --brand-secondary: #85acb0; }
+  :root .theme--light {
+    --general-main-1: #ffffff;
+    --general-main-2: #ffffff;
+    --general-section-1: #f2f3f4;
+    --general-section-2: #f2f3f4;
+    --general-disabled: #eaeced;
+    --general-hover: #e6e9e9;
+    --general-active: #d6dadb;
+    --text-prominent: #333333;
+    --text-general: #333333;
+    --text-less-prominent: #999999;
+    --text-disabled: #d6d6d6;
+    --text-profit-success: #4bb4b3;
+    --text-loss-danger: #ec3f3f;
+    --text-colored-background: #ffffff;
+    --purchase-main-1: #4bb4b3;
+    --purchase-section-1: #3d9494;
+    --purchase-main-2: #ec3f3f;
+    --purchase-section-2: #d33636;
+    --purchase-disabled-main: #eaeced;
+    --purchase-disabled-section: #e6e9e9;
+    --button-primary-default: var(--brand-red-coral);
+    --button-secondary-default: #999999;
+    --button-tertiary-default: transparent;
+    --button-primary-hover: #eb3e48;
+    --button-secondary-hover: rgba(0, 0, 0, 0.08);
+    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
+    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
+    --overlay-inside-dialog: rgba(255, 255, 255, 0.96);
+    --shadow-menu: rgba(0, 0, 0, 0.16);
+    --state-normal: #ffffff;
+    --state-hover: #e6e9e9;
+    --state-active: #d6dadb;
+    --state-disabled: #eaeced;
+    --border-normal: #d6dadb;
+    --border-hover: #999999;
+    --border-active: var(--brand-secondary);
+    --border-disabled: #eaeced;
+    --fill-normal: #ffffff;
+    --fill-hover: #999999;
+    --fill-active: var(--brand-secondary);
+    --fill-disabled: #eaeced;
+    --status-default: #eaeced;
+    --status-danger: #ec3f3f;
+    --status-success: #4bb4b3;
+    --status-warning: #ffad3a;
+    --status-info: #377cfc;
+    --status-colored-background: #ffffff;
+    --transparent-success: rgba(75, 180, 179, 0.92);
+    /* TODO: change to styleguide later */
+    --gradient-success: linear-gradient(to top, #ffffff, rgba(75, 180, 179, 0.16));
+    --gradient-danger: linear-gradient(to top, #ffffff, rgba(255, 68, 79, 0.16)); }
+  :root .theme--dark {
+    --general-main-1: #0e0e0e;
+    --general-main-2: #151717;
+    --general-section-1: #151717;
+    --general-section-2: #0e0e0e;
+    --general-disabled: #1d1f20;
+    --general-hover: #242828;
+    --general-active: #323738;
+    --text-prominent: #ffffff;
+    --text-general: #c2c2c2;
+    --text-less-prominent: #6e6e6e;
+    --text-disabled: #3e3e3e;
+    --text-profit-success: #00a79e;
+    --text-loss-danger: #cc2e3d;
+    --text-colored-background: #ffffff;
+    --purchase-main-1: #00a79e;
+    --purchase-section-1: #008079;
+    --purchase-main-2: #cc2e3d;
+    --purchase-section-2: #a32430;
+    --purchase-disabled-main: #1d1f20;
+    --purchase-disabled-section: #0e0e0e;
+    --button-primary-default: var(--brand-red-coral);
+    --button-secondary-default: #6e6e6e;
+    --button-tertiary-default: transparent;
+    --button-primary-hover: #eb3e48;
+    --button-secondary-hover: rgba(255, 255, 255, 0.08);
+    --button-tertiary-hover: rgba(255, 68, 79, 0.08);
+    --overlay-outside-dialog: rgba(0, 0, 0, 0.72);
+    --overlay-inside-dialog: rgba(14, 14, 14, 0.96);
+    --shadow-menu: rgba(0, 0, 0, 0.84);
+    --state-normal: #0e0e0e;
+    --state-hover: #242828;
+    --state-active: #323738;
+    --state-disabled: #1d1f20;
+    --border-normal: #323738;
+    --border-hover: #6e6e6e;
+    --border-active: var(--brand-secondary);
+    --border-disabled: #1d1f20;
+    --fill-normal: #0e0e0e;
+    --fill-hover: #6e6e6e;
+    --fill-active: var(--brand-secondary);
+    --fill-disabled: #1d1f20;
+    --status-default: #eaeced;
+    --status-danger: #cc2e3d;
+    --status-warning: #ffad3a;
+    --status-success: #00a79e;
+    --status-info: #377cfc;
+    --status-colored-background: #ffffff;
+    --transparent-success: rgba(0, 167, 158, 0.92);
+    /* TODO: change to styleguide later */
+    --gradient-success: linear-gradient(to top, #0e0e0e, rgba(0, 167, 158, 0.16));
+    --gradient-danger: linear-gradient(to top, #0e0e0e, rgba(255, 68, 79, 0.16)); }
+
 @font-face {
   font-family: 'BinarySymbols';
   font-style: normal;
@@ -16788,14 +13089,10 @@ table {
     align-items: center;
     justify-content: center;
     background-color: var(--overlay-inside-dialog); }
-    .theme--light .positions-drawer-card__result--won, .theme--light .positions-drawer-card__result--won:after {
-      background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 148, 117, 0.16)); }
-    .theme--dark .positions-drawer-card__result--won, .theme--dark .positions-drawer-card__result--won:after {
-      background-image: linear-gradient(to top, rgba(16, 19, 32, 0), rgba(0, 148, 117, 0.16)); }
-    .theme--light .positions-drawer-card__result--lost, .theme--light .positions-drawer-card__result--lost:after {
-      background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(227, 28, 75, 0.16)); }
-    .theme--dark .positions-drawer-card__result--lost, .theme--dark .positions-drawer-card__result--lost:after {
-      background-image: linear-gradient(to top, rgba(16, 19, 32, 0), rgba(227, 28, 75, 0.16)); }
+    .positions-drawer-card__result--won, .positions-drawer-card__result--won:after {
+      background-image: var(--gradient-success); }
+    .positions-drawer-card__result--lost, .positions-drawer-card__result--lost:after {
+      background-image: var(--gradient-danger); }
     .positions-drawer-card__result:hover {
       background: 0 !important; }
       .positions-drawer-card__result:hover .result__caption {
@@ -18201,7 +14498,7 @@ table {
   height: 100vh;
   width: 100%;
   text-align: center;
-  color: #ffffff; }
+  color: var(--text-colored-background); }
 
 /** @define login-prompt */
 .login-prompt {
@@ -18478,7 +14775,7 @@ table {
     text-align: left;
     line-height: 1.5; }
   .btn-purchase__info {
-    color: #ffffff;
+    color: var(--text-colored-background);
     text-align: left;
     position: relative;
     display: flex;
@@ -18810,7 +15107,7 @@ table {
      -moz-appearance: none;
           appearance: none;
   box-sizing: border-box;
-  background: #ffffff; }
+  background: var(--general-main-1); }
   .native-select__select:hover {
     border-color: var(--general-hover); }
   .native-select__select:active, .native-select__select:focus {
@@ -18835,7 +15132,7 @@ table {
       left: 17px !important; }
   .switch-button:after {
     border-radius: 50%;
-    background: #ffffff;
+    background: var(--general-main-1);
     transition: all 0.2s ease;
     top: 1px;
     left: 1px;
