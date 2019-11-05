@@ -31,11 +31,11 @@ function confirm {
     echo "${RESET}"
 }
 
-message "Checking out the dev branch" &&
-git checkout dev &&
-message "Updating dev" &&
-git fetch upstream dev &&
-git reset --hard upstream/dev &&
+# message "Checking out the dev branch" &&
+# git checkout dev &&
+# message "Updating dev" &&
+# git fetch upstream dev &&
+# git reset --hard upstream/dev &&
 message "Creating new branch $NEW_TRANSLATION_BRANCH from dev" &&
 if [ `git branch --list $NEW_TRANSLATION_BRANCH` ]
 then
