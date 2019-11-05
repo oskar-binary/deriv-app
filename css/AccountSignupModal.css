@@ -168,6 +168,7 @@ html {
 /** @define hidden */
 .hidden {
   visibility: hidden !important;
+  -webkit-transition: none !important;
   transition: none !important; }
 
 /** @define absolute-center-v */
@@ -219,10 +220,15 @@ html {
 .account-signup {
   margin: 1.6rem 1.6rem 0; }
   .account-signup__residence-selection, .account-signup__password-selection {
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: nowrap column; }
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: nowrap column; }
   .account-signup__password-selection .account-signup__heading {
     margin-bottom: 3.3rem; }
   .account-signup__heading {

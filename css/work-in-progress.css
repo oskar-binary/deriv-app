@@ -168,6 +168,7 @@ html {
 /** @define hidden */
 .hidden {
   visibility: hidden !important;
+  -webkit-transition: none !important;
   transition: none !important; }
 
 /** @define absolute-center-v */
@@ -218,19 +219,26 @@ html {
 /** @define work-in-progress */
 .work-in-progress {
   height: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  display: -webkit-box;
   display: flex;
   background: var(--general-main-2); }
   .work-in-progress__content {
     width: 100%;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     padding: 0 1.6em; }
   .work-in-progress__header {
-    font-size: 2.8em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 2.8rem;
+    color: var(--text-general);
     font-weight: 700;
     text-transform: none;
     text-align: center;
@@ -238,8 +246,8 @@ html {
     margin: 0.8em 0 0.4em;
     color: var(--text-prominent); }
   .work-in-progress__text {
-    font-size: 1.6em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.6rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: none;
     text-align: center;

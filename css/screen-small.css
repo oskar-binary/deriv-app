@@ -168,6 +168,7 @@ html {
 /** @define hidden */
 .hidden {
   visibility: hidden !important;
+  -webkit-transition: none !important;
   transition: none !important; }
 
 /** @define absolute-center-v */
@@ -231,9 +232,13 @@ html {
 
 /** @define fieldset-minimized */
 .fieldset-minimized {
+  display: -webkit-box;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
   padding: 0.5em;
   white-space: pre-line; }
   .fieldset-minimized__amount {

@@ -168,6 +168,7 @@ html {
 /** @define hidden */
 .hidden {
   visibility: hidden !important;
+  -webkit-transition: none !important;
   transition: none !important; }
 
 /** @define absolute-center-v */

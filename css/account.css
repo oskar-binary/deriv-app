@@ -229,6 +229,7 @@ html {
 /** @define hidden */
 .hidden {
   visibility: hidden !important;
+  -webkit-transition: none !important;
   transition: none !important; }
 
 /** @define absolute-center-v */
@@ -279,7 +280,8 @@ html {
 .account {
   margin: 0 16px; }
   .account .vertical-tab {
-    height: calc(100vh - 83px); }
+    height: calc(100vh - 83px);
+    max-width: calc(100vw - 32px); }
     .account .vertical-tab__tab {
       min-width: 240px; }
   .account__inset_header {
@@ -365,11 +367,14 @@ html {
       position: absolute;
       bottom: 0;
       left: 0;
+      display: -webkit-box;
       display: flex;
       width: 100%;
       padding: 16px 24px;
-      align-items: center;
-      justify-content: flex-end;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: end;
+              justify-content: flex-end;
       z-index: 999;
       border-radius: 0 4px 4px 0;
       border-top: 1px solid var(--general-section-1);
@@ -383,31 +388,30 @@ html {
         text-align: right;
         width: 27.6rem; }
       .account-form__footer-btn {
-        height: 4em;
+        height: 4rem;
         margin-top: 0;
         margin-bottom: 0;
-        margin-right: 0;
-        min-width: 6.4em; }
+        margin-left: 1.6rem; }
   .account__intial-loader {
     height: calc(100vh - 240px); }
   .account__text {
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-general); }
     .account__text--small {
-      font-size: 1.2em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.2rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
       line-height: 1.25; }
     .account__text--xsmall {
-      font-size: 1em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
@@ -420,12 +424,16 @@ html {
     font-size: var(--text-size-s);
     color: var(--text-general); }
     .account .account-management__message-content {
+      display: -webkit-box;
       display: flex;
       width: 100%;
       height: 100%;
       margin: 80px 16px 0;
-      align-items: center;
-      flex-direction: column; }
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column; }
       .account .account-management__message-content .btn--link {
         height: 40px;
         margin-top: 32px; }
@@ -448,11 +456,14 @@ html {
     line-height: 1.5; }
   .account .account-management__text-container {
     margin-top: 10px;
-    max-width: 467px; }
+    max-width: 467px;
+    margin-bottom: 2em; }
   .account .account-management-flex-wrapper {
+    display: -webkit-box;
     display: flex; }
     .account .account-management-flex-wrapper--space-between {
-      justify-content: space-between; }
+      -webkit-box-pack: justify;
+              justify-content: space-between; }
   .account .account__text_container {
     margin-top: 12px;
     margin-bottom: 24px; }
@@ -465,8 +476,8 @@ html {
       .account .account-management-table thead tr {
         padding-bottom: 8px; }
       .account .account-management-table thead th {
-        font-size: 1.4em;
-        color: rgba(0, 0, 0, 0.8);
+        font-size: 1.4rem;
+        color: var(--text-general);
         font-weight: 700;
         text-transform: none;
         text-align: left;
@@ -493,16 +504,21 @@ html {
     height: 100%;
     width: 100%; }
   .account .account-limit-popover {
+    display: -webkit-box;
     display: flex;
     align-content: center;
     padding-left: 4px; }
   .account .account-limit-popover-target {
     height: 100%;
+    display: -webkit-box;
     display: flex;
-    align-items: center; }
+    -webkit-box-align: center;
+            align-items: center; }
   .account .account-limit-info__inset_header {
+    display: -webkit-box;
     display: flex;
-    align-items: center; }
+    -webkit-box-align: center;
+            align-items: center; }
   .account .account-limit-info * {
     padding-left: 8px; }
   .account-address__details-section {
@@ -516,17 +532,20 @@ html {
 
 .account-poa__upload-section {
   margin-top: 1em;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap; }
 
 .account-poa__upload-list {
   width: 100%;
-  flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
   margin-right: 16px; }
 
 .account-poa__upload-file {
   width: 100%;
-  flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
   height: 240px;
   position: relative; }
   .account-poa__upload-file .dc-file-dropzone {
@@ -539,9 +558,13 @@ html {
   top: 8px;
   right: 8px;
   cursor: pointer;
-  transition: transform 0.25s linear; }
+  -webkit-transition: -webkit-transform 0.25s linear;
+  transition: -webkit-transform 0.25s linear;
+  transition: transform 0.25s linear;
+  transition: transform 0.25s linear, -webkit-transform 0.25s linear; }
   .account-poa__upload-remove-btn:hover {
-    transform: scale(1.25, 1.25); }
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25); }
   .account-poa__upload-remove-btn--error circle {
     fill: var(--status-danger); }
   .account-poa__upload-remove-btn-container {
@@ -552,10 +575,13 @@ html {
     height: 100%; }
 
 .account-poa__upload-box {
+  display: -webkit-box;
   display: flex;
   margin-bottom: 2em;
-  align-items: center;
-  justify-content: flex-start; }
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+          justify-content: flex-start; }
 
 .account-poa__upload-item {
   min-width: 238px;
@@ -567,13 +593,15 @@ html {
 
 .account-poa__details-section {
   margin-top: 1em;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap; }
 
 .account-poa__details-description {
   width: 100%;
   margin-right: 0.5em;
-  flex: 1; }
+  -webkit-box-flex: 1;
+          flex: 1; }
 
 .account-poa__details-text {
   font-size: var(--text-size-xs);
@@ -583,7 +611,8 @@ html {
 .account-poa__details-fields {
   width: 100%;
   min-width: 400px;
-  flex: 1; }
+  -webkit-box-flex: 1;
+          flex: 1; }
   .account-poa__details-fields .account-form__fieldset {
     margin-bottom: 3em; }
 
@@ -608,12 +637,15 @@ html {
 
 /** @define form-submit-error-message; weak */
 .form-submit-error-message {
+  display: -webkit-box;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   margin-right: auto;
   font-size: var(--text-size-xxs);
   font-weight: bold;
-  flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
   color: var(--text-prominent); }
   .form-submit-error-message p {
     padding-left: 16px; }
@@ -627,12 +659,17 @@ html {
 
 /** @define poi-icon-row; weak */
 .poi-icon-row {
+  display: -webkit-box;
   display: flex;
   margin-bottom: 16px; }
   .poi-icon-row__icon-container {
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     color: var(--text-less-prominent); }
     .poi-icon-row__icon-container:not(:first-child):not(:last-child) {
       margin: 0 40px; }

@@ -168,6 +168,7 @@ html {
 /** @define hidden */
 .hidden {
   visibility: hidden !important;
+  -webkit-transition: none !important;
   transition: none !important; }
 
 /** @define absolute-center-v */
@@ -234,6 +235,7 @@ html {
     background-color: var(--general-main-1);
     z-index: 98; }
   .composite-calendar__input-fields {
+    display: -webkit-box;
     display: flex;
     border-radius: 4px; }
     .composite-calendar__input-fields > .input-field {
@@ -268,8 +270,8 @@ html {
     border-bottom: none; }
   .composite-calendar__prepopulated-list {
     padding-top: 50px;
-    font-size: 1.4em;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    color: var(--text-general);
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
@@ -284,18 +286,23 @@ html {
       cursor: pointer;
       padding: 6px 6px 6px 16px;
       height: 32px;
+      display: -webkit-box;
       display: flex;
-      align-items: center; }
+      -webkit-box-align: center;
+              align-items: center; }
       .composite-calendar__prepopulated-list li:hover:not(.composite-calendar__prepopulated-list--is-active) {
         background: var(--state-hover); }
 
 /** @define table */
 .table {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   box-sizing: border-box;
-  font-size: 1.4em;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  color: var(--text-general);
   font-weight: 400;
   text-transform: default;
   text-align: center;
@@ -303,8 +310,10 @@ html {
   color: var(--text-general); }
   .table__cell {
     padding: 0.75em;
+    display: -webkit-box;
     display: flex;
-    align-items: center; }
+    -webkit-box-align: center;
+            align-items: center; }
     .table__cell:first-child {
       padding-left: 0; }
     .table__cell:last-child {
@@ -335,9 +344,13 @@ html {
     border-bottom: none; }
   .table__body {
     overflow: hidden;
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     flex-basis: 0; }
     .table__body .table__row-link:hover {
       background-color: var(--state-hover);
@@ -359,13 +372,16 @@ html {
   border-radius: 4px; }
   .reports__meta {
     width: 100%;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     padding: 0 24px 16px; }
     .reports__meta-description--heading {
-      font-size: 1.6em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.6rem;
+      color: var(--text-general);
       font-weight: 700;
       text-transform: none;
       text-align: left;
@@ -373,8 +389,8 @@ html {
       color: var(--text-prominent);
       line-height: 1.55; }
     .reports__meta-description--paragraph {
-      font-size: 1.4em;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.4rem;
+      color: var(--text-general);
       font-weight: 400;
       text-transform: none;
       text-align: left;
@@ -382,6 +398,7 @@ html {
       color: var(--text-general); }
     .reports__meta-filter {
       position: relative;
+      display: -webkit-box;
       display: flex; }
   .reports__inset_header {
     box-shadow: inset 0 -1px 0 0 var(--general-section-1);
@@ -405,24 +422,29 @@ html {
     max-height: 100%; }
   .statement__table {
     height: calc(100% - 42px);
-    flex: 1; }
+    -webkit-box-flex: 1;
+            flex: 1; }
   .statement__row {
     /*                     icon   refId tr_time  transaction cred/debt  balance */
     grid-template-columns: 0.8fr  1.2fr 1fr      0.8fr         1fr        1fr; }
     .statement__row--detail {
       overflow: hidden;
       max-height: 63px;
+      display: -webkit-box;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+              align-items: center;
       padding: 0;
-      justify-content: center;
+      -webkit-box-pack: center;
+              justify-content: center;
       background-color: var(--general-section-1); }
       .statement__row--detail-text {
         padding: 1.12em; }
     .statement__row .date {
       text-align: left; }
   .statement .amount, .statement .balance {
-    justify-content: flex-end; }
+    -webkit-box-pack: end;
+            justify-content: flex-end; }
   .statement .amount {
     font-weight: bold; }
     .statement .amount--profit {
@@ -459,8 +481,10 @@ html {
     font-size: 1em;
     padding: 0.5em;
     border-bottom: 1px solid var(--general-section-1);
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
   .statement-card__refid a {
     color: #2196f3;
     text-decoration: none; }
@@ -489,11 +513,17 @@ html {
 
 /** @define statement-empty */
 .statement-empty {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
   .statement-empty__icon {
     height: 6.4em;
     width: 6.4em;
@@ -512,12 +542,14 @@ html {
     max-height: 100%; }
   .profit-table__table {
     height: calc(100% - 42px);
-    flex: 1; }
+    -webkit-box-flex: 1;
+            flex: 1; }
   .profit-table__row {
     /*                     icon   refId buy_time  buy_price sell_time  sell_price profit/loss */
     grid-template-columns: 0.8fr  1.2fr 1fr       0.8fr     1fr        1fr        1fr; }
   .profit-table .buy_price, .profit-table .sell_price, .profit-table .profit_loss {
-    justify-content: flex-end; }
+    -webkit-box-pack: end;
+            justify-content: flex-end; }
   .profit-table .sell_time, .profit-table .purchase_time {
     text-align: left; }
 
@@ -531,22 +563,32 @@ html {
     width: 100%;
     max-height: 100%; }
   .open-positions__indicative {
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column; }
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; }
     .open-positions__indicative--amount {
+      display: -webkit-box;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+              align-items: center;
       line-height: 16px; }
     .open-positions__indicative-no-resale-msg {
       clear: both;
       text-align: right;
       font-size: smaller; }
   .open-positions__profit-loss {
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center; }
     .open-positions__profit-loss--movement {
       width: 16px;
       height: 16px; }
@@ -567,22 +609,27 @@ html {
         color: inherit; }
   .open-positions__table {
     height: calc(100% - 42px);
-    flex: 1; }
+    -webkit-box-flex: 1;
+            flex: 1; }
   .open-positions__row {
     /*                     icon   refId buy_price  potential_payout potential_profit  indicative_price rem_time */
     grid-template-columns: 0.8fr  1.2fr 1fr        1fr            1fr               1fr              1fr;
     width: 100%; }
   .open-positions .buy_price, .open-positions .payout, .open-positions .indicative, .open-positions .profit {
-    justify-content: flex-end; }
+    -webkit-box-pack: end;
+            justify-content: flex-end; }
   .open-positions .type {
     padding-right: 0; }
   .open-positions .progress-slider {
     border: none;
     margin: 0; }
     .open-positions .progress-slider__ticks {
+      display: -webkit-box;
       display: flex;
-      align-items: center;
-      justify-content: space-between; }
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+              justify-content: space-between; }
       .open-positions .progress-slider__ticks-step {
         background: var(--state-hover); }
       .open-positions .progress-slider__ticks-wrapper {
@@ -596,9 +643,15 @@ html {
 .empty-trade-history {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
   margin: auto; }
   .empty-trade-history__icon {
     width: 96px;
