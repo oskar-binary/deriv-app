@@ -486,7 +486,7 @@
   font-size: 1.6rem;
   color: var(--text-general);
   font-weight: 700;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.75;
   color: var(--text-prominent);
@@ -822,7 +822,7 @@ html {
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.5;
   color: var(--text-prominent); }
@@ -1428,8 +1428,24 @@ html {
       text-align: center;
       color: var(--text-less-prominent); }
   .notifications-item {
-    padding: 8px;
-    margin-left: 32px; }
+    padding: 0.8rem;
+    margin-left: 3.2rem;
+    margin-right: 0.8rem;
+    position: relative; }
+    .notifications-item:after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: -3.2rem;
+      width: calc(100% + 4rem);
+      height: 1px;
+      background: var(--border-disabled); }
+    .notifications-item__cta-button {
+      margin: 8px 0 0 auto;
+      height: 24px !important;
+      width: 106px; }
+      .notifications-item__cta-button .btn__text {
+        font-size: 1.2rem; }
     .notifications-item__title {
       font-size: 1.4rem;
       font-weight: bold;
@@ -2039,6 +2055,22 @@ html {
   -webkit-box-pack: center;
           justify-content: center;
   padding: 0 1.6em 0 1.7em; }
+  .acc-info__preloader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 46px;
+    z-index: 2;
+    background: var(--general-main-1); }
+    .acc-info__preloader:before {
+      content: '';
+      position: absolute;
+      left: -90px;
+      width: 90px;
+      height: 46px;
+      top: 0;
+      background: var(--general-main-1); }
   .acc-info__container {
     align-items: center;
     -webkit-box-align: center;
@@ -2180,7 +2212,7 @@ html {
       font-size: 1.6rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.75;
       display: block;
@@ -2232,7 +2264,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       -webkit-box-align: center;
@@ -2251,7 +2283,7 @@ html {
         font-size: 1.4rem;
         color: var(--text-colored-background);
         font-weight: 700;
-        text-transform: capitalize;
+        text-transform: none;
         text-align: left;
         line-height: 1.5; }
         .acc-switcher__account--selected .acc-switcher__id--virtual:before {
@@ -2322,7 +2354,7 @@ html {
   font-size: 0.8rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: center;
   line-height: unset;
   text-transform: none;
@@ -2429,7 +2461,7 @@ html {
         }
 */
 .platform_dropdown {
-  z-index: 3;
+  z-index: 5;
   background-color: var(--overlay-outside-dialog);
   width: 100%;
   height: 100%;
@@ -3154,7 +3186,7 @@ html {
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: center;
   line-height: 1.5;
   color: var(--text-prominent);
@@ -3406,9 +3438,10 @@ html {
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.5;
+  line-height: 1.43;
   color: var(--text-general);
   display: -webkit-box;
   display: flex;
@@ -3417,8 +3450,7 @@ html {
           justify-content: center;
   pointer-events: none;
   vertical-align: middle;
-  padding: 0.6rem 0;
-  padding-left: 1.6em; }
+  padding: 0.6rem 1.6rem; }
 
 .dc-list__item-text--left {
   -webkit-box-pack: start;
@@ -3433,9 +3465,10 @@ html {
   font-size: 1.4rem;
   color: var(--text-colored-background);
   font-weight: 700;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.5;
+  line-height: 1.43;
   color: var(--text-prominent);
   background: var(--state-active); }
 
@@ -3452,7 +3485,7 @@ html {
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.5;
   width: 100%;
@@ -3637,19 +3670,19 @@ html {
 .dc-input__field::-moz-placeholder {
   line-height: 1.5;
   opacity: 0;
-  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
   transition: opacity 0.25s; }
 
 .dc-input__field:-ms-input-placeholder {
   line-height: 1.5;
   opacity: 0;
-  -webkit-transition: opacity 0.25s;
+  -ms-transition: opacity 0.25s;
   transition: opacity 0.25s; }
 
 .dc-input__field::-ms-input-placeholder {
   line-height: 1.5;
   opacity: 0;
-  -webkit-transition: opacity 0.25s;
+  -ms-transition: opacity 0.25s;
   transition: opacity 0.25s; }
 
 .dc-input__field::placeholder {
@@ -3748,8 +3781,29 @@ html {
   cursor: text;
   font-size: var(--text-size-xs); }
 
-.dc-input__leading-icon + .dc-input__field {
-  padding-left: calc(1.6rem + 6px); }
+.dc-input__leading-icon.symbols {
+  top: 0.9rem; }
+
+.dc-input__leading-icon.symbols + .dc-input__field {
+  padding-left: calc(1.6rem + 15px); }
+
+.dc-input__leading-icon.symbols--usd + .dc-input__field {
+  padding-left: calc(1.6rem + 3px); }
+
+.dc-input__leading-icon.symbols--eur + .dc-input__field, .dc-input__leading-icon.symbols--gbp + .dc-input__field, .dc-input__leading-icon.symbols--eth + .dc-input__field, .dc-input__leading-icon.symbols--etc + .dc-input__field {
+  padding-left: calc(1.6rem + 4px); }
+
+.dc-input__leading-icon.symbols--btc + .dc-input__field, .dc-input__leading-icon.symbols--ltc + .dc-input__field {
+  padding-left: calc(1.6rem + 5px); }
+
+.dc-input__leading-icon.symbols--ust + .dc-input__field {
+  padding-left: calc(1.6rem + 7px); }
+
+.dc-input__leading-icon.symbols--bch + .dc-input__field {
+  padding-left: calc(1.6rem + 10px); }
+
+.dc-input__leading-icon.symbols--aud + .dc-input__field {
+  padding-left: calc(1.6rem + 15px); }
 
 .dc-input__trailing-icon {
   margin: 0 1.2rem 0 0 !important; }
@@ -3790,7 +3844,7 @@ html {
 .dc-input--no-placeholder label {
   -webkit-transform: translate(0, -1.8rem) scale(0.75);
           transform: translate(0, -1.8rem) scale(0.75);
-  color: var(--text-less-prominent);
+  color: var(--text-prominent);
   padding: 0 4px;
   background-color: var(--fill-normal); }
 
@@ -4057,7 +4111,7 @@ html {
         font-size: 1.4rem;
         color: var(--text-general);
         font-weight: 700;
-        text-transform: capitalize;
+        text-transform: none;
         text-align: center;
         line-height: 1.5;
         color: var(--text-prominent); }
@@ -4080,7 +4134,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.5;
       color: var(--text-general); }
@@ -4725,7 +4779,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     text-transform: none;
@@ -4736,7 +4790,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     margin: 1rem 0;
@@ -4746,7 +4800,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     text-transform: none;
@@ -5035,7 +5089,7 @@ html {
       font-size: 1.6rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.75;
       margin-top: 2rem;
@@ -5044,7 +5098,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       padding: 1rem;
@@ -5964,7 +6018,7 @@ html {
     font-size: 1.6rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.75;
     text-transform: none;
@@ -5974,7 +6028,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.5;
     text-transform: none;
@@ -5984,7 +6038,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.5;
     text-transform: none;
@@ -6016,7 +6070,7 @@ html {
     font-size: 1.6rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.75;
     color: var(--text-prominent);
@@ -6026,7 +6080,7 @@ html {
     font-size: 1.6rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.75;
     text-transform: none;
@@ -6036,7 +6090,7 @@ html {
     font-size: 1.2rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.25;
     text-transform: none;
@@ -6062,7 +6116,7 @@ html {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.5;
     text-transform: initial;
@@ -6071,7 +6125,7 @@ html {
     font-size: 1.6rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     line-height: 1.75;
     color: var(--text-prominent); }
@@ -6105,7 +6159,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       text-transform: none;
@@ -6123,7 +6177,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       text-transform: none; }
@@ -6415,7 +6469,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.5;
       background-color: var(--text-less-prominent);
@@ -6425,7 +6479,7 @@ html {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.5;
       background-color: var(--brand-red-coral) !important;
@@ -6472,6 +6526,317 @@ html {
 
 .modal__container.modal__real-account-signup-modal .vertical-tab__content {
   padding: 0 !important; }
+
+/*------------------------------------*
+ *  # Constants
+ *------------------------------------*/
+/* stylelint-disable color-no-hex */
+/* COLOR PALETTE */
+/* colors */
+/* alpha colors */
+/* gradient colors */
+/* Preserve legacy variables */
+/* Primary */
+/* stylelint-enable color-no-hex */
+/*------------------------------------*
+ *  # SASS Mixins and Functions
+ *------------------------------------*/
+/*
+ * SASS interpolation
+ */
+/*
+ * PX to EM
+ * @param $px - px value to be converted
+ * @param $base - base font size (in `em`)
+ * Note: 'em' values are calculate based on the element font-size
+ *       to properly converts 'px' to 'em', please pass in the element font-size with it
+ * Usage example:
+    padding: em(16px, 1.6em); // font-size in 'em'
+ */
+/*
+ * Set property by passing a property name, and values.
+ * @param $property name - padding, margin etc.
+ * @param $values        - values in `px` (space separated for multiple values)
+ * @param $font-size     - base font-size in `em`
+ * Usage example:
+   @include toEm(padding, 8px 16px 8px, 1.6em);
+ */
+/*
+ * Generate typefaces key-value pair of variable name and config
+ * Example:
+   --paragraph-center-bold-black: (14px, center, bold, black)
+ */
+/*
+ * Sets font-size, font-weight, color, text-transform, text-align and line-height
+ * Usage example:
+   @include setTypeface(16px, bold, black, uppercase);
+ */
+/*
+ * Set typefaces by passing a typeface variable name
+ * @param $var   - typeface variable
+ * @param $tt    - text-transform property
+ * @param $align - text-align property
+ * Usage example:
+   @include typeface(--paragraph-bold-black, uppercase, center);
+ */
+/*
+ * Range Slider Thumb styling is set here
+ */
+/*
+ * SVG icons colors
+ */
+/*
+ * Bar Spinner Animation
+ * @param $count    - number of bars
+ * @param $duration - duration of animation
+ * @param $phase    - each bar phase change delay
+ * Usage example:
+   @include createBarspinnerAnimation(5, 1.2s, 0,1);
+ */
+/*
+ * Tooltip colors
+ * @param $color - color property
+ * Usage example:
+   @include tooltipColor($COLOR_RED);
+ */
+/*
+ * Convert Tooltip colors
+ * @param $color - css color property
+ * Usage example:
+   @include convertTooltipColor(var(--status-default));
+ */
+/*
+    Constants
+*/
+/*
+    Variables
+*/
+/*
+    List of all typefaces variables in the format: --$FONT_SIZES-$TEXT_ALIGN-$FONT_WEIGHTS-COLORS.
+    See $FONT_SIZES, $TEXT_ALIGN, $FONT_WEIGHTS, $COLORS maps above for references.
+    Variables name example: --title-center-semibold-red
+ */
+/*
+    to use styles without modifier class on .inline-icon
+    use @extend
+
+    e.g. style icon on parent hover:
+        a:hover .inline-icon {
+            @extend %inline-icon.active;
+        }
+*/
+/* postcss-bem-linter: ignore */
+html {
+  font-size: 62.5%;
+  /** TODO: define breakpoints */ }
+
+/** @define body */
+.body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+/* postcss-bem-linter: ignore */
+*, html, .body {
+  font-family: "IBM Plex Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box; }
+
+/** @define select */
+.select {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  padding: 2px 3px;
+  border: 1px solid var(--border-normal);
+  border-radius: 4px; }
+
+/** @define input */
+.input {
+  font-family: inherit;
+  font-style: inherit;
+  padding: 2px 3px;
+  color: var(--text-general); }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: var(--text-general); }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--text-general); }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: var(--text-general); }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: var(--text-general); }
+
+/** @define theme */
+.theme--light {
+  background: #ffffff; }
+
+.theme--dark {
+  background: #0e0e0e; }
+
+/** @define container */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+/** @define hidden */
+.hidden {
+  visibility: hidden !important;
+  -webkit-transition: none !important;
+  transition: none !important; }
+
+/** @define absolute-center-v */
+.absolute-center-v {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0; }
+
+/** @define link */
+.link {
+  color: var(--brand-red-coral);
+  font-weight: bold;
+  text-decoration: none; }
+  .link:hover {
+    text-decoration: underline;
+    cursor: pointer; }
+  .link--white {
+    color: #ffffff; }
+
+/** @define icon */
+.icon--centered {
+  top: 0.8em;
+  left: 5%; }
+
+/** @define center-text */
+.center-text {
+  text-align: center; }
+
+/** @define no-margin */
+.no-margin {
+  margin: 0; }
+
+/** @define hr */
+.hr {
+  border-top: var(--general-section-1);
+  display: block;
+  height: 1px;
+  border: 0;
+  margin: 0.5em 0;
+  padding: 0; }
+
+/** @define deriv-app */
+.deriv-app {
+  height: 100%;
+  overflow: hidden; }
+
+/** @define notification-messages; */
+.notification-messages {
+  z-index: 4;
+  position: absolute;
+  right: 0;
+  top: 8px; }
+
+/** @define notification; weak */
+.notification {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  border-radius: 4px;
+  max-width: 348px;
+  padding: 16px;
+  color: var(--text-prominent);
+  background-color: var(--general-main-2);
+  box-shadow: 0 4px 6px 0 var(--shadow-menu), 0 4px 6px 0 var(--shadow-menu);
+  overflow: hidden;
+  -webkit-transition: opacity 0.25s linear, -webkit-transform 0.25s ease;
+  transition: opacity 0.25s linear, -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease, opacity 0.25s linear;
+  transition: transform 0.25s ease, opacity 0.25s linear, -webkit-transform 0.25s ease; }
+  .notification--enter-done {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  .notification--enter, .notification--exit {
+    opacity: 0;
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px); }
+  .notification--small {
+    max-width: 240px; }
+  .notification__cta-button {
+    margin-top: 0.8rem;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    height: 24px;
+    max-width: 150px;
+    align-self: flex-end; }
+    .notification__cta-button .btn__text {
+      font-size: 1.2rem; }
+  .notification__text-container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    z-index: 2;
+    width: 100%; }
+  .notification__text-body {
+    font-size: 1.4rem;
+    line-height: 1.43; }
+  .notification__header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 8px; }
+  .notification__close-button {
+    position: absolute;
+    top: -4px;
+    right: 8px;
+    visibility: visible;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 2; }
+    .notification__close-button:focus, .notification__close-button:active {
+      outline: none; }
+    .notification__close-button:after {
+      content: '\0000D7';
+      font-size: 30px;
+      font-weight: 300;
+      color: var(--text-prominent); }
+  .notification__icon-type {
+    margin-right: 15px;
+    margin-top: 0.5rem;
+    width: 1.4rem;
+    height: 1.4rem; }
+    .notification__icon-type--is-background {
+      width: 160px;
+      height: 160px; }
+  .notification__icon-background {
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    pointer-events: none;
+    opacity: 0.07;
+    z-index: 0; }
+  .notification:not(:last-child) {
+    margin-bottom: 16px; }
 
 /*------------------------------------*
  *  # Constants
@@ -7860,6 +8225,7 @@ table {
     opacity: 0;
     pointer-events: none;
     top: -1px;
+    z-index: 2;
     left: 0;
     width: 100%;
     height: calc(100% + 2px);
@@ -7905,7 +8271,8 @@ table {
             order: 1;
     display: -webkit-inline-box;
     display: inline-flex;
-    height: 47px; }
+    height: 47px;
+    position: relative; }
   .header__menu-toggle {
     align-self: center;
     display: -webkit-box;
@@ -7934,7 +8301,7 @@ table {
       font-size: 1.6rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.75;
       padding: 0.5em 0;
@@ -8160,7 +8527,7 @@ table {
   font-size: 1.2rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.25;
   color: var(--text-general); }
@@ -8547,7 +8914,7 @@ table {
     font-size: 1.6rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.75;
     color: var(--text-general); }
@@ -8681,7 +9048,7 @@ table {
       font-size: 1.2rem;
       color: var(--text-general);
       font-weight: 400;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: center;
       line-height: 1.25;
       color: var(--text-prominent);
@@ -9426,7 +9793,7 @@ table {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       color: var(--text-prominent); }
@@ -9444,7 +9811,7 @@ table {
     font-size: 1.2rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.25;
     align-self: center;
@@ -9467,7 +9834,7 @@ table {
       font-size: 1.4rem;
       color: var(--text-general);
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: none;
       text-align: left;
       line-height: 1.5;
       color: var(--text-prominent); }
@@ -9643,7 +10010,7 @@ table {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 700;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-prominent);
@@ -9666,7 +10033,7 @@ table {
     font-size: 1.4rem;
     color: var(--text-general);
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     line-height: 1.5;
     color: var(--text-prominent); }
@@ -9967,7 +10334,7 @@ table {
   font-size: 1.4rem;
   color: var(--text-general);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: left;
   line-height: 1.5;
   color: var(--text-prominent);
@@ -10192,10 +10559,10 @@ table {
       width: 100%;
       height: 100%;
       line-height: 1.43; }
+      .cashier__wrapper .inline-icon .color1-fill, .cashier__wrapper--align-left .inline-icon .color1-fill {
+        fill: var(--text-general); }
     .cashier__wrapper--align-left {
       text-align: left; }
-    .cashier__wrapper .inline-icon .color1-fill {
-      fill: var(--text-general); }
   .cashier__loader {
     font-size: 1rem; }
     .cashier__loader-wrapper {
@@ -10213,7 +10580,6 @@ table {
     display: flex;
     -webkit-box-pack: end;
             justify-content: flex-end;
-    box-shadow: inset 0 1px 0 0 rgba(224, 224, 224, 0.5);
     width: calc(100% + 4.8rem);
     margin-left: -2.4rem;
     position: absolute;
@@ -10232,14 +10598,17 @@ table {
     .cashier__form-error-small-icon {
       margin: 2rem 1.6rem 4.4rem 2.4rem; }
   .cashier__form-submit-button {
-    height: 4rem;
     margin: 1.6rem 2.4rem 2.4rem; }
-  .cashier__input-long {
+  .cashier__input {
     display: inline-block !important;
     margin-bottom: 0 !important; }
+    .cashier__input--short {
+      width: 29rem; }
+    .cashier__input--long {
+      width: 100%; }
   .cashier__drop-down {
     display: inline-block;
-    min-width: 20rem;
+    min-width: 20.3rem;
     min-height: 4rem;
     margin: 0 0 16px;
     line-height: 1.43; }
@@ -10247,6 +10616,7 @@ table {
       -webkit-box-pack: left;
               justify-content: left;
       min-height: 4rem;
+      min-width: 20.3rem;
       height: auto; }
       .cashier__drop-down-display-span {
         font-size: 1.4rem;
@@ -10302,11 +10672,14 @@ table {
   .cashier__modal-tab {
     min-width: 24rem; }
   .cashier__success {
+    text-align: center;
     background-color: var(--general-section-1);
-    padding: 2.4rem 3.4rem;
-    margin: 0 4.9rem; }
-  .cashier__amount-symbol {
-    top: 0.9rem; }
+    padding: 2.4rem;
+    width: 50.4rem;
+    margin: 0 auto 3.2rem; }
+  .cashier__done-button {
+    width: 15.6rem;
+    margin-left: -1.6rem; }
   .cashier__no-balance-icon {
     margin: 10.7rem 0 1.6rem; }
   .cashier__no-balance-button {
@@ -10339,8 +10712,7 @@ table {
     line-height: 1.5;
     margin-bottom: 0.8rem; }
   .cashier-error__button {
-    margin: 3.2rem auto 1.6rem;
-    height: 4rem; }
+    margin: 3.2rem auto 1.6rem; }
   .cashier-error__footer {
     font-size: 1.2rem; }
 
@@ -10396,34 +10768,55 @@ table {
 
 /** @define payment-agent */
 .payment-agent__instructions {
-  margin-top: 24px;
+  margin-top: 2.4rem;
   display: -webkit-box;
   display: flex; }
   .payment-agent__instructions-section {
+    border: 1px solid var(--border-normal);
     -webkit-box-flex: 1;
-            flex: 1; }
+            flex: 1;
+    padding: 1.6rem; }
     .payment-agent__instructions-section .payment-agent__header {
-      margin-bottom: 8px; }
+      margin-bottom: 8px;
+      text-align: center; }
     .payment-agent__instructions-section:not(:first-child) {
-      margin-left: 24px; }
+      margin-left: 24px;
+      margin-left: 1.6rem; }
+  .payment-agent__instructions-button {
+    display: block;
+    margin: auto; }
 
-.payment-agent__button {
-  margin: 0;
-  height: 40px; }
+.payment-agent__list-header {
+  margin-top: 32px;
+  font-size: 1.4rem;
+  line-height: 1.43; }
 
-.payment-agent__available-header {
-  margin-top: 32px; }
-
-.payment-agent__available-selector {
-  margin-bottom: 16px;
+.payment-agent__list-selector {
+  margin-bottom: 8px;
   display: -webkit-box;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  margin-right: 1px; }
+
+.payment-agent__list-line {
+  border-bottom: 1px solid var(--general-section-1);
+  position: relative;
+  width: 80%;
+  margin-left: 20%;
+  top: -25px; }
 
 .payment-agent__drop-down {
   margin-left: 8px;
-  min-width: 20rem;
   width: auto;
   margin-bottom: 0; }
+
+.payment-agent__filter {
+  min-width: 22.8rem;
+  margin-top: 0; }
+  .payment-agent__filter-display {
+    min-height: 3.2rem;
+    min-width: 22.8rem; }
 
 .payment-agent__accordion-content-line {
   margin-bottom: 8px; }
@@ -10434,22 +10827,23 @@ table {
 
 .payment-agent__disclaimer {
   background-color: var(--general-section-1);
-  margin-top: 24px;
-  padding: 8px 16px;
+  margin-top: 2.4rem;
+  padding: 1.6rem;
   font-size: 1.2rem;
-  line-height: 1.42; }
+  line-height: 1.5; }
 
 .payment-agent__radio {
   display: none; }
   .payment-agent__radio-group {
-    display: block; }
+    display: block;
+    margin-bottom: 3.9rem; }
   .payment-agent__radio-wrapper {
     display: -webkit-box;
-    display: flex; }
-    .payment-agent__radio-wrapper:not(:last-child) {
-      margin-bottom: 1.6rem; }
-    .payment-agent__radio-wrapper:last-child {
-      margin-bottom: 2.7rem; }
+    display: flex;
+    margin-bottom: 2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
   .payment-agent__radio-circle {
     border: 2px solid var(--text-general);
     border-radius: 50%;
@@ -10467,40 +10861,19 @@ table {
       border-color: #ff444f;
       border-color: var(--brand-red-coral); }
 
-.payment-agent__receipt {
-  text-align: center; }
-
 .payment-agent__transferred-contact {
-  margin-top: 16px;
-  margin-bottom: 8px; }
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem; }
+  .payment-agent__transferred-contact-wrapper {
+    margin: 3.2rem; }
 
 .payment-agent__contact {
   text-decoration: none;
   color: #ff444f;
   color: var(--brand-red-coral); }
 
-.payment-agent__separator {
-  border-bottom: var(--general-section-2);
-  margin-top: 32px;
-  margin-bottom: 16px;
-  width: calc(100% + 2.4rem + 2.4rem);
-  margin-left: -2.4rem; }
-
 .payment-agent__explanation {
-  margin-top: -8px;
-  margin-bottom: 24px; }
-
-.payment-agent__buttons {
-  -webkit-box-pack: end;
-          justify-content: flex-end;
-  display: -webkit-box;
-  display: flex; }
-
-.payment-agent__statement-button, .payment-agent__done-button {
-  margin: 0; }
-
-.payment-agent__done-button {
-  margin-left: 8.5px; }
+  margin-top: -0.8rem; }
 
 .payment-agent__input {
   width: 12.6rem !important;
@@ -10520,7 +10893,7 @@ table {
 
 /** @define account-transfer */
 .account-transfer__notes {
-  color: var(--text-less-prominent);
+  color: var(--text-general);
   margin-top: calc(3.2rem + 1.7rem);
   font-size: 1.2rem;
   line-height: 1.5; }
@@ -10570,7 +10943,6 @@ table {
           align-items: center; }
 
 .account-transfer__button-done {
-  height: 4rem;
   margin: 3.2rem auto 0; }
 
 /* stylelint-disable plugin/selector-bem-pattern */
@@ -10581,17 +10953,10 @@ div.payment-agent-transfer__header {
 div.payment-agent-transfer__input {
   width: 29.6rem;
   display: -webkit-inline-box;
-  display: inline-flex; }
+  display: inline-flex;
+  margin-bottom: 3.1rem; }
   div.payment-agent-transfer__input:not(:first-child) {
     margin-left: 2.4rem; }
-
-div.payment-agent-transfer__buttons {
-  margin-left: -10.7rem;
-  -webkit-box-align: center;
-          align-items: center; }
-
-div.payment-agent-transfer__done-button {
-  margin-right: 2.4rem; }
 
 /* stylelint-enable plugin/selector-bem-pattern */
 /** @define dc-modal-header; */
