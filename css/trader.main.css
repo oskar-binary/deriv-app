@@ -1453,6 +1453,25 @@ html,
   .dc-modal__container_financial-assessment-confirmation .dc-modal-body {
     padding-top: 1.2rem; }
 
+.dc-modal .leave-confirm__message-content {
+  text-align: center; }
+
+.dc-modal .leave-confirm__message-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.4rem; }
+
+.dc-modal .leave-confirm__message {
+  margin-bottom: 0.8rem;
+  font-weight: bold; }
+
+.dc-modal .account-management-leave-confirm {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.4rem; }
+  .dc-modal .account-management-leave-confirm :first-child {
+    margin-right: 0.8rem; }
+
 /* stylelint-enable */
 
 /*------------------------------------*
