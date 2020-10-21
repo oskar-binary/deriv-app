@@ -4,7 +4,7 @@ on:
     push:
         branches:
             - test_storybook_deployment
-          paths:
+        paths:
             - 'packages/components/stories/**'
 
 jobs:
