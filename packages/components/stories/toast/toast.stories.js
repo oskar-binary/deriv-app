@@ -12,7 +12,7 @@ stories.addDecorator(withKnobs).addDecorator(withInfo);
 stories
     .add('static', () => (
         <Theme is_dark={boolean('Theme', false)}>
-            <Toast>Message to be shown!</Toast>
+            <Toast>Message to be shown</Toast>
         </Theme>
     ))
     .add('with timeout', () => (
