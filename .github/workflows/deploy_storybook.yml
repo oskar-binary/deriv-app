@@ -4,6 +4,8 @@ on:
     push:
         branches:
             - test_storybook_deployment
+          paths:
+            - 'packages/components/stories/**'
 
 jobs:
     build-and-deploy:
@@ -24,6 +26,6 @@ jobs:
               uses: JamesIves/github-pages-deploy-action@3.7.1
               with:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  BRANCH: gh-pages # The branch the action should deploy to.
-                  FOLDER: packages/components/.out # The folder the action should deploy.
-                  CLEAN: true # Automatically remove deleted files from the deploy branch
+                  BRANCH: gh-pages
+                  FOLDER: packages/components/.out
+                  CLEAN: true
